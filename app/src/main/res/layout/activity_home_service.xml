@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_color_custome"
+    tools:context="com.example.user.homeservantapplication.HomeServiceActivity">
+
+    <TextView
+        android:text="Home Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV_HomeServiceHead"
+        android:gravity="center"
+        style="@style/LogMaid_id_Title"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listV_HomeService">
+
+
+    </ListView>
+
+</LinearLayout>

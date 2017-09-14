@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_textView"
+            android:icon="@drawable/nev_text_view_icon"
+            android:title="View Info" />
+        <item
+            android:id="@+id/nav_editResume"
+            android:icon="@drawable/edit_resume"
+            android:title="Edit Resume" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/nev_change_password_icon"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_per_work_service"
+            android:icon="@drawable/per_work_service"
+            android:title="Per Service Work" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/nev_logout_icon"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

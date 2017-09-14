@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_color_custome"
+    tools:context="com.example.user.homeservantapplication.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Servant"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|normal|italic"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LogIN"
+                    android:id="@+id/button_LogIn"
+                    android:onClick="logInMethod"
+                    android:background="@drawable/button_shape"
+                    style="@style/HomeButton_Text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <ViewFlipper
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/viewFlipper">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cliening"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView1"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/kichan"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView2"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/dring"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView3"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/wash"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView4"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/weash"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imageView5"/>
+
+                    </ViewFlipper>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="30dp">
+
+                    <ImageButton
+
+                        android:layout_width="92dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/button_HomeService"
+                        android:onClick="logInMethod"
+                        android:background="@drawable/service_home_icon"
+                        style="@style/HomeButton_Text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Service"
+                        style="@style/HomeButton_Text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="50dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+
+                        android:layout_width="92dp"
+                        android:layout_height="97dp"
+                        android:id="@+id/button_ServiceArea"
+                        android:onClick="logInMethod"
+                        android:background="@drawable/service_area_map_icon"
+                        style="@style/HomeButton_Text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.63" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Area"
+                        style="@style/HomeButton_Text"
+                        android:paddingLeft="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="30dp">
+
+                    <Button
+
+                        android:layout_width="92dp"
+                        android:layout_height="79dp"
+                        android:id="@+id/buttonGallery"
+                        android:onClick="logInMethod"
+                        android:background="@drawable/photo_gallery_icon"
+                        style="@style/HomeButton_Text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photo Gallery"
+                        style="@style/HomeButton_Text"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="50dp">
+
+                    <Button
+                        android:layout_width="92dp"
+                        android:layout_height="79dp"
+                        android:id="@+id/buttonAbout"
+                        android:onClick="logInMethod"
+                        android:background="@drawable/female_about_info_icon"
+                        style="@style/HomeButton_Text"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About"
+                        style="@style/HomeButton_Text"
+                        android:paddingLeft="35dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

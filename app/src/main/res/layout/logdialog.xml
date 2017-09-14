@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp"
+android:weightSum="1"
+android:background="#C8BFD8">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please Choose an option"
+    android:id="@+id/tv_Title"
+    android:gravity="center"
+    android:textStyle="bold|normal"
+    android:textSize="25dp"
+    style="@style/LogMaid_Text" />
+
+
+<Button
+    android:id="@+id/button_LogDialogMaid"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Maid Servant"
+    android:layout_marginTop="20dp"
+    android:layout_weight="0.12"
+    android:background="@drawable/button_shape"
+    style="@style/HomeButton_Text"/>
+
+<Button
+    android:id="@+id/button_LogDialogSeeker"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    style="@style/HomeButton_Text"
+    android:text="Maid Seeker"
+    android:layout_weight="0.12"
+    android:background="@drawable/button_shape"/>
+</LinearLayout>

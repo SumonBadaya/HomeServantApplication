@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_seeker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  android:padding="15dp"
+    tools:context="com.example.user.homeservantapplication.RegistrationSeekerActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration of Maid Seeker"
+        android:gravity="center"
+        style="@style/LogMaid_Title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/textView_First_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                style="@style/LogMaid_Text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_First_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                style="@style/LogMaid_Text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Last_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewUser_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_Seeker_UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_PhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_NID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NID"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_NID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_id"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Location"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_address_map"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:text=""
+                    android:drawableLeft="@drawable/icon_address_map"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Password"
+                style="@style/LogMaid_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+
+                <EditText
+                    android:id="@+id/eT_Seeker_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/icon_password"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum 5 digit enter your password!"/>
+
+            <TextView
+                android:id="@+id/textView_ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_Seeker_ConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/icon_password"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_Next_SeekerReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                style="@style/HomeButton_Text"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

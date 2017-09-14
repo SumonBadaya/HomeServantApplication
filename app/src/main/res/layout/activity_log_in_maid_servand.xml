@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_in_maid_servand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_color_login_page"
+    tools:context="com.example.user.homeservantapplication.LogInMaidServandActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_Maid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maid Servant"
+                android:gravity="center"
+                style="@style/LogMaid_Title"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in "
+                android:gravity="center"
+                style="@style/LogMaid_id_Title" />
+
+
+            <TextView
+                android:id="@+id/textViewUser_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_LogMaid_UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:drawableLeft="@drawable/icon_user"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                style="@style/LogMaid_Text"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_button_shap">
+
+                <EditText
+                    android:id="@+id/eT_LogMaid_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/icon_password"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_Login_Maid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/button_shape"
+                style="@style/HomeButton_Text"
+                android:layout_marginTop="50dp"
+                android:onClick="maidLogRegMethod"/>
+            <Button
+                android:id="@+id/button_Registration_Maid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="10dp"
+                android:onClick="maidLogRegMethod"
+                style="@style/HomeButton_Text"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

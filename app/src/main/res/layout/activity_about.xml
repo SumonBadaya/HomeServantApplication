@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:padding="5dp"
+    tools:context="com.example.user.homeservantapplication.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/button_shape"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.04"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_Maid"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/farjana_akter_nahid"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Farjana Akter Nahid"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold|italic"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Name"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROLL-1005"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Roll"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01753091682"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Maid_UserName"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.04"
+                android:layout_marginLeft="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tahmina Akhter Moni"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold|italic"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Name_Moni"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROLL-939"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Roll_Moni"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01721314201"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_ManiPhone"/>
+                </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_Moni"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tahmin_akher_moni"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.04"
+                android:layout_marginLeft="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_mahadi"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/faisal"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mahadi Faisal"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold|italic"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_Name_faisal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROLL-1004"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_faisal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="01747277303"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:id="@+id/TV_faisalPhone"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/logo_wub"
+                    android:id="@+id/imageView8" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="World University of Bangladesh"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Department of CSE, 30(D) Batch"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plot #3/A, Road # 4, Dhanmondi, Dhaka-1209"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

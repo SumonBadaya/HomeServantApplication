@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/Seeker_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/activity_home_user_seeker"
+                    android:layout_width="match_parent"
+                    android:layout_height="513dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/background_color_custome"
+                    tools:context="com.example.user.homeservantapplication.HomeUserSeekerActivity">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/bg_user_color"
+                            android:orientation="vertical">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_image_Seeker"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:src="@drawable/faculty_user_photo"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="User Name"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20dp"
+                                android:gravity="center"
+                                android:id="@+id/TV_Seeker_UserName"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phone Number"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="16dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="55dp"
+                                    android:id="@+id/TV_Seeker_PhoneNumber"/>
+                                <TextView
+                                    android:text="Upload"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textViewUploadSeeker"
+                                    style="@style/HomeButton_Text"
+                                    android:onClick="MethodHomeSeekerUserPic"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="30dp">
+
+                            <ImageButton
+
+                                android:layout_width="92dp"
+                                android:layout_height="97dp"
+                                android:id="@+id/button_HomeService"
+                                android:onClick="logInMethod"
+                                android:background="@drawable/service_home_icon"
+                                style="@style/HomeButton_Text" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Home Service"
+                                style="@style/HomeButton_Text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="50dp"
+                            android:weightSum="1">
+
+                            <ImageButton
+
+                                android:layout_width="92dp"
+                                android:layout_height="97dp"
+                                android:id="@+id/button_ServiceArea"
+                                android:onClick="logInMethod"
+                                android:background="@drawable/service_area_map_icon"
+                                style="@style/HomeButton_Text"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="0.63" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Service Area"
+                                style="@style/HomeButton_Text"
+                                android:paddingLeft="10dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="30dp">
+
+                            <Button
+
+                                android:layout_width="92dp"
+                                android:layout_height="79dp"
+                                android:id="@+id/buttonGallery"
+                                android:onClick="logInMethod"
+                                android:background="@drawable/photo_gallery_icon"
+                                style="@style/HomeButton_Text"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Photo Gallery"
+                                style="@style/HomeButton_Text"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="50dp">
+
+                            <Button
+
+                                android:layout_width="92dp"
+                                android:layout_height="79dp"
+                                android:id="@+id/buttonMaidServantHome"
+                                android:onClick="logInMethod"
+                                android:background="@drawable/maid_servant_icon"
+                                style="@style/HomeButton_Text"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Maid Servant"
+                                style="@style/HomeButton_Text"
+                                android:paddingLeft="10dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/Seeker_Navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/activity_nav_drawer_maid_drawer" />
+    </android.support.v4.widget.DrawerLayout>
