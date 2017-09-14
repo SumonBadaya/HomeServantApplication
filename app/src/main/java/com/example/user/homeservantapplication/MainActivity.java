@@ -13,8 +13,9 @@ import android.widget.Button;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
-    ViewFlipper viewFlipper;
-    Animation fadeIn, fadeOut;
+
+//    ViewFlipper viewFlipper;
+//    Animation fadeIn, fadeOut;
 
 
     @Override
@@ -26,15 +27,19 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
 
-        viewFlipper=(ViewFlipper)findViewById(R.id.viewFlipper);
-        fadeIn= AnimationUtils.loadAnimation(this,R.anim.fade_in);
-        fadeOut=AnimationUtils.loadAnimation(this,R.anim.fade_out);
 
-        viewFlipper.setAutoStart(true);
-        viewFlipper.setInAnimation(fadeIn);
-        viewFlipper.setInAnimation(fadeOut);
-        viewFlipper.setFlipInterval(7000);
-        viewFlipper.startFlipping();
+
+        //no need those thing are in java file, i already included it into xml
+
+        //viewFlipper=(ViewFlipper)findViewById(R.id.viewFlipper);
+//        fadeIn= AnimationUtils.loadAnimation(this,R.anim.fade_in);
+//        fadeOut=AnimationUtils.loadAnimation(this,R.anim.fade_out);
+
+//        viewFlipper.setAutoStart(true);
+//        viewFlipper.setInAnimation(fadeIn);
+//        viewFlipper.setInAnimation(fadeOut);
+//        viewFlipper.setFlipInterval(7000);
+//        viewFlipper.startFlipping();
 
     }
 
@@ -98,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentHomeService);
 
                 break;
+
+            // show GOOGLE map using this code
 
             case R.id.button_ServiceArea:
                 String GPSurl="https://www.google.com.bd/maps/place/Dhaka/@23.8060349,90.3970428,14z/data=!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8103183!4d90.4125023?hl=en";

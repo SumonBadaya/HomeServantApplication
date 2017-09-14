@@ -52,6 +52,10 @@
                     <ViewFlipper
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:autoStart="true"
+                        android:flipInterval="5000"
+                        android:inAnimation="@anim/fade_in"
+                        android:outAnimation="@anim/fade_out"
 
                         android:id="@+id/viewFlipper">
                         <ImageView
